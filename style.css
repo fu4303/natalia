@@ -2,9 +2,85 @@
   box-sizing: border-box;
 }
 
-.title {
-  font-size: 30px;
-  color: black;
-  background-color: blanchedalmond;
+@font-face {
+  font-family: 'Lucky';
+  src: url('lucky.ttf');
+}
+
+body {
+  font-family: 'Lucky';
+  font-size: 14px;
+  margin: 0;
+  background-color: #fbf6f2;
   text-align: center;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5em;
+  padding: 2% 0;
+  margin: 0;
+}
+
+.landingPage {
+  height: 75vh;
+}
+
+.title {
+  font-size: 6em;
+  color: #636b45;
+  text-align: center;
+  padding-top: 12%;
+  margin: 0;
+}
+
+.tagline {
+  font-family: 'Lucky';
+  font-size: 3em;
+  padding: 0;
+}
+
+.services {
+  height: 50vh;
+  background-color: #826363;
+  color: #fbf6f2;
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.serviceList li {
+  list-style: none;
+  width: 20%;
+}
+
+.projects {
+  height: 100vh;
+  background-color: #fbf6f2;
+  color: #636b45;
+}
+
+.about {
+  height: 50vh;
+  background-color: #636b45;
+  color: #fbf6f2;
+}
+
+.clients {
+  height: 70vh;
+  background-color: #fbf6f2;
+  color: #636b45;
+}
+
+.contact {
+  height: 50vh;
+  background-color: #826363;
+  color: #fbf6f2;
 }
