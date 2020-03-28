@@ -95,6 +95,10 @@ h2 {
   transition: all ease-in-out 0.5s;
 }
 
+#webTitle {
+  margin-top: 29%;
+}
+
 .serviceListTitle {
   padding: 2% 0 0;
   color: #fbf6f2;
@@ -102,6 +106,11 @@ h2 {
 
 .serviceItem:hover .serviceTitle {
   margin-top: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.serviceItem:hover #webTitle {
+  margin-top: 4%;
   transition: all ease-in-out 0.3s;
 }
 
