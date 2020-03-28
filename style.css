@@ -62,9 +62,13 @@ h2 {
   height: 50vh;
   background-color: #826363;
   color: #636b45;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
 }
 
 .serviceList {
+  grid-column: 2;
+  align-self: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -91,16 +95,21 @@ h2 {
 
 .serviceTitle {
   font-size: 2em;
-  margin-top: 25%;
+  margin-top: 26%;
   transition: all ease-in-out 0.5s;
 }
 
 #webTitle {
-  margin-top: 29%;
+  margin-top: 32%;
 }
 
 .serviceListTitle {
-  padding: 2% 0 0;
+  grid-column: 1;
+  transform: rotate(-90deg);
+  width: 52vh;
+  font-size: 4em;
+  /* float: left; */
+  padding-bottom: 10%;
   color: #fbf6f2;
 }
 
@@ -120,12 +129,6 @@ h2 {
   transition: font-size ease-in 0.4s;
   transition: color ease-in-out 1s;
 }
-
-/* .serviceItem.active .serviceBlurb {
-  color: #636b45;
-  display: block;
-  height: auto;
-} */
 
 .projects {
   height: 100vh;
