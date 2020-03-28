@@ -26,8 +26,21 @@ h2 {
   margin: 0;
 }
 
-.landingPage {
+.overlay {
   height: 75vh;
+  background-color: rgb(251, 246, 242, 0.85);
+  z-index: 1;
+}
+
+.landingPage {
+  height: 100%;
+  background-image: url('photos/type.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 .title {
@@ -47,19 +60,62 @@ h2 {
 .services {
   height: 50vh;
   background-color: #826363;
-  color: #fbf6f2;
+  color: #636b45;
 }
 
 .serviceList {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  height: 80%;
 }
 
-.serviceList li {
+.serviceItem {
   list-style: none;
   width: 20%;
+  height: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 15px;
+  background-color: #fbf6f2;
+  position: relative;
+  overflow: hidden;
 }
+
+.serviceBlurb {
+  color: #fbf6f2;
+  font-size: 0px;
+  transition: all ease-in-out 0.6s;
+}
+
+.serviceTitle {
+  font-size: 2em;
+  margin-top: 25%;
+  transition: all ease-in-out 0.3s;
+}
+
+.serviceListTitle {
+  padding: 2% 0 0;
+  color: #fbf6f2;
+}
+
+.serviceItem:hover .serviceTitle {
+  margin-top: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.serviceItem:hover .serviceBlurb {
+  font-size: 1em;
+  color: #636b45;
+  transition: font-size ease-in-out 0.4s;
+  transition: color ease-in-out 1s;
+}
+
+/* .serviceItem.active .serviceBlurb {
+  color: #636b45;
+  display: block;
+  height: auto;
+} */
 
 .projects {
   height: 100vh;
