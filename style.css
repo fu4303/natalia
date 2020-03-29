@@ -26,29 +26,84 @@ h2 {
   margin: 0;
 }
 
-.overlay {
-  height: 75vh;
-  background-color: rgb(251, 246, 242, 0.85);
-  z-index: 1;
+.menu {
+  font-size: 1.3em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fbf6f2;
+  height: 80px;
+  padding: 0 25px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  z-index: 99;
+}
+
+.navigationBar {
+  font-family: 'DM Serif Display', serif;
+  grid-column: 2;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-self: center;
+}
+
+.pageLink {
+  text-decoration: none;
+  color: black;
 }
 
 .landingPage {
-  height: 100%;
-  background-image: url('photos/type.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 100%;
-  position: relative;
-  z-index: -1;
+  height: 75vh;
+}
+
+.typewriter {
+  padding-top: 20%;
+  padding-left: 18%;
+}
+
+.typewriter h2 {
+  text-align: left;
+  color: black;
+  overflow: hidden;
+  border-right-color: #636b45;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.textRotate {
+  color: #636b45;
 }
 
 .title {
-  font-size: 6em;
   color: #636b45;
-  text-align: center;
-  padding-top: 12%;
-  margin: 0 8% 0 0;
+  grid-column: 1;
+  text-align: left;
+  align-self: center;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #636b45;
+  }
 }
 
 .tagline {
@@ -58,10 +113,18 @@ h2 {
   padding: 0;
 }
 
-.services {
+.storyServices {
   height: 50vh;
   background-color: #826363;
   color: #636b45;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+
+.tellingServices {
+  height: 50vh;
+  background-color: #fbf6f2;
+  color: #826363;
   display: grid;
   grid-template-columns: 5% 90% 5%;
 }
@@ -75,42 +138,64 @@ h2 {
   height: 80%;
 }
 
-.serviceItem {
+.serviceItem,
+.tellingServiceItem {
   list-style: none;
   width: 20%;
-  height: 70%;
+  height: 75%;
   margin-top: auto;
   margin-bottom: auto;
   padding: 15px;
   background-color: #fbf6f2;
   position: relative;
   overflow: hidden;
+  opacity: 1;
 }
 
-.serviceBlurb {
+.tellingServiceItem {
+  background-image: url('photos/digital.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  opacity: 0.2;
+  /* background-size: 100%; */
+  position: relative;
+  /* z-index: -1; */
+}
+
+.serviceBlurb,
+.tellingServiceBlurb {
   color: #fbf6f2;
   font-size: 0px;
-  transition: all ease-out 0.6s;
+  transition: all ease-in-out 0.6s;
+}
+
+.tellingServiceBlurb {
+  color: #826363;
 }
 
 .serviceTitle {
   font-size: 2em;
-  margin-top: 26%;
+  margin-top: 30%;
   transition: all ease-in-out 0.5s;
 }
 
 #webTitle {
-  margin-top: 32%;
+  margin-top: 37%;
 }
 
-.serviceListTitle {
+.serviceListTitle,
+.tellingListTitle {
   grid-column: 1;
   transform: rotate(-90deg);
   width: 52vh;
   font-size: 4em;
-  /* float: left; */
   padding-bottom: 10%;
   color: #fbf6f2;
+}
+
+.tellingListTitle {
+  color: #826363;
 }
 
 .serviceItem:hover .serviceTitle {
@@ -123,11 +208,16 @@ h2 {
   transition: all ease-in-out 0.3s;
 }
 
-.serviceItem:hover .serviceBlurb {
+.serviceItem:hover .serviceBlurb,
+.serviceItem:hover .tellingServiceBlurb {
   font-size: 1em;
   color: #636b45;
-  transition: font-size ease-in 0.4s;
+  transition: font-size ease-in-out 0.4s;
   transition: color ease-in-out 1s;
+}
+
+.serviceItem:hover .tellingServiceBlurb {
+  color: #826363;
 }
 
 .projects {
