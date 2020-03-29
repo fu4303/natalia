@@ -113,20 +113,22 @@ h2 {
   padding: 0;
 }
 
-.storyServices {
-  height: 50vh;
-  background-color: #826363;
-  color: #636b45;
+.storytelling {
+  height: 75vh;
   display: grid;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 50% 50%;
+}
+
+.storyServices {
+  grid-column: 1;
+  background-color: #fbf6f2;
+  color: #826363;
 }
 
 .tellingServices {
-  height: 50vh;
-  background-color: #fbf6f2;
+  grid-column: 2;
+  background-color: #826363;
   color: #826363;
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
 }
 
 .serviceList {
@@ -157,10 +159,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
-  opacity: 0.2;
-  /* background-size: 100%; */
   position: relative;
-  /* z-index: -1; */
 }
 
 .serviceBlurb,
@@ -184,18 +183,16 @@ h2 {
   margin-top: 37%;
 }
 
-.serviceListTitle,
-.tellingListTitle {
-  grid-column: 1;
-  transform: rotate(-90deg);
-  width: 52vh;
-  font-size: 4em;
-  padding-bottom: 10%;
-  color: #fbf6f2;
+.serviceListTitle {
+  font-size: 3.5em;
+  color: #826363;
+  text-align: right;
 }
 
 .tellingListTitle {
-  color: #826363;
+  font-size: 3.5em;
+  color: #fbf6f2;
+  text-align: left;
 }
 
 .serviceItem:hover .serviceTitle {

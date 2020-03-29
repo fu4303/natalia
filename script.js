@@ -45,12 +45,10 @@ window.onload = function() {
   var elements = document.getElementsByClassName('textRotate');
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
+    console.log('length: ', toRotate.valueOf());
     var period = elements[i].getAttribute('data-period');
     if (toRotate) {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-    if (elements[4]) {
-      TxtRotate(this.stop);
     }
   }
   // INJECT CSS
@@ -59,3 +57,19 @@ window.onload = function() {
   css.innerHTML = '.textRotate > .wrap { border-right: 0.08em solid #666 }';
   document.body.appendChild(css);
 };
+
+const navItems = document.querySelectorAll('.navItem');
+
+$('nav')
+  .find('.pageLink')
+  .click(function(e) {
+    menuButton.classList.remove('close');
+    menu.classList.remove('show');
+    menuNav.classList.remove('show');
+    navItems.forEach(item => item.classList.remove('show'));
+    showMenu = false;
+    let section = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(section).offset().top
+    });
+  });
