@@ -10,12 +10,16 @@ var TxtRotate = function(el, toRotate, period) {
 
 TxtRotate.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
+  // console.log({ i });
   var fullTxt = this.toRotate[i];
+  // console.log({ fullTxt });
 
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
+  } else if (this.txt === 'app.' || 'campaign.') {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
+  } else {
+    this.txt = 'brand.';
   }
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
@@ -47,8 +51,10 @@ window.onload = function() {
     var toRotate = elements[i].getAttribute('data-rotate');
     console.log('length: ', toRotate.valueOf());
     var period = elements[i].getAttribute('data-period');
+    console.log('period: ', period);
     if (toRotate) {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      console.log(JSON.parse(toRotate));
     }
   }
   // INJECT CSS
@@ -63,13 +69,13 @@ const navItems = document.querySelectorAll('.navItem');
 $('nav')
   .find('.pageLink')
   .click(function(e) {
-    menuButton.classList.remove('close');
-    menu.classList.remove('show');
-    menuNav.classList.remove('show');
+    // menuButton.classList.remove('close');
+    // menu.classList.remove('show');
+    // menuNav.classList.remove('show');
     navItems.forEach(item => item.classList.remove('show'));
     showMenu = false;
     let section = $(this).attr('href');
     $('html, body').animate({
-      scrollTop: $(section).offset().top
+      scrollTop: $(section).offset().top - 75
     });
   });
