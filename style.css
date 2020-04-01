@@ -113,6 +113,20 @@ h2 {
   padding: 0;
 }
 
+.introBlurb {
+  height: 30vh;
+  background-color: #cda34f;
+  color: #fbf6f2;
+  font-family: 'DM Serif Display', serif;
+}
+
+.introBlurb h3 {
+  font-size: 2.2em;
+  padding: 10vh 7%;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
 .storytelling {
   height: 75vh;
   display: grid;
@@ -135,36 +149,36 @@ h2 {
   grid-column: 2;
   align-self: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   height: 80%;
 }
 
 .serviceItem,
 .tellingServiceItem {
   list-style: none;
-  width: 20%;
-  height: 75%;
+  width: 75%;
+  height: 15%;
   margin-top: auto;
   margin-bottom: auto;
   padding: 15px;
-  background-color: #fbf6f2;
   position: relative;
   overflow: hidden;
   opacity: 1;
+  background-color: #826363;
+  color: black;
+  transition: all ease-in-out 0.3s;
 }
 
 .tellingServiceItem {
-  background-image: url('photos/digital.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  background-color: #fbf6f2;
   position: relative;
 }
 
 .serviceBlurb,
 .tellingServiceBlurb {
-  color: #fbf6f2;
+  color: #826363;
   font-size: 0px;
   transition: all ease-in-out 0.6s;
 }
@@ -175,12 +189,8 @@ h2 {
 
 .serviceTitle {
   font-size: 2em;
-  margin-top: 30%;
+  margin: 0;
   transition: all ease-in-out 0.5s;
-}
-
-#webTitle {
-  margin-top: 37%;
 }
 
 .serviceListTitle {
@@ -195,26 +205,27 @@ h2 {
   text-align: left;
 }
 
+.serviceItem:hover,
+.tellingServiceItem:hover {
+  height: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
 .serviceItem:hover .serviceTitle {
   margin-top: 0;
   transition: all ease-in-out 0.3s;
 }
 
-.serviceItem:hover #webTitle {
-  margin-top: 4%;
-  transition: all ease-in-out 0.3s;
-}
-
 .serviceItem:hover .serviceBlurb,
-.serviceItem:hover .tellingServiceBlurb {
-  font-size: 1em;
-  color: #636b45;
+.tellingServiceItem:hover .tellingServiceBlurb {
+  font-size: 1.3em;
+  color: black;
   transition: font-size ease-in-out 0.4s;
   transition: color ease-in-out 1s;
 }
 
 .serviceItem:hover .tellingServiceBlurb {
-  color: #826363;
+  color: black;
 }
 
 .projects {
