@@ -75,7 +75,9 @@ h2 {
 }
 
 .textRotate {
+  font-size: 3em;
   color: #636b45;
+  display: inline;
 }
 
 .title {
@@ -107,6 +109,7 @@ h2 {
 }
 
 .tagline {
+  display: inline;
   font-family: 'Lucky';
   font-size: 3em;
   margin: -0.8% 0 0 8%;
@@ -116,7 +119,7 @@ h2 {
 .flo-li {
   height: 150px;
   width: 150px;
-  transform: translate3d(88vw, 25vh, 0) scale(0.8);
+  transform: translate3d(88vw, 23vh, 0) scale(0.8);
   color: #cda34f;
 }
 
