@@ -20,6 +20,7 @@
     <meta name="twitter:card" content="" />
     <meta charset="utf-8" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="quotes.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css?family=DM+Serif+Display"
@@ -56,12 +57,20 @@
       <div class="typewriter">
         <h2 class="tagline">
           The story makes the
-          <span
-            class="textRotate"
-            data-period="2000"
-            data-rotate='[ "app.", "campaign.", "video.", "movement.", "site.", "brand." ]'
-          ></span>
         </h2>
+        <span
+          class="textRotate"
+          data-period="2000"
+          data-rotate='[ "app.", "campaign.", "video.", "movement.", "site.", "brand." ]'
+        ></span>
+        <!-- <div class="rotatingWords">
+          <span class="app">app.</span>
+          <span class="campaign">campaign.</span>
+          <span class="video">video.</span>
+          <span class="movement">movement.</span>
+          <span class="site">site.</span>
+          <span class="brand">brand.</span>
+        </div> -->
       </div>
     </section>
     <section class="introBlurb">
@@ -160,10 +169,67 @@
       <h2 class="projectList">Project List</h2>
     </section>
     <section class="about" id="how">
-      <h2 class="aboutBlurb">About</h2>
+      <h2 class="aboutBlurb">The Process</h2>
     </section>
     <section class="clients" id="who">
-      <h2 class="clientReviews">Client Reviews</h2>
+      <div class="wrapper">
+        <div class="quoteSlider">
+          <div class="currentQuote">
+            <article>
+              <p id="quote-1-content" class="quote in-focus">
+                Natalia is fantastic. She is the best human I ever met and she
+                does amazing work and I want to be her when I grow up.
+              </p>
+            </article>
+            <article>
+              <p id="quote-2-content" class="quote">
+                BrightGeist made my brand one million dollars. I bought a boat.
+              </p>
+            </article>
+            <article>
+              <p id="quote-3-content" class="quote">
+                I loved working with BrightGeist. They made me ridiculously
+                successful and brought me breakfast in bed and drove my mom to
+                the airport and gave me their first born child.
+              </p>
+            </article>
+            <article>
+              <p id="quote-4-content" class="quote">
+                Natalia is fantastic. She is the best human I ever met and she
+                does amazing work and I want to be her when I grow up.
+              </p>
+            </article>
+            <article>
+              <p id="quote-5-content" class="quote">
+                BrightGeist made my brand one million dollars. I bought a boat.
+              </p>
+            </article>
+            <article>
+              <p id="quote-6-content" class="quote">
+                I loved working with BrightGeist. They made me ridiculously
+                successful and brought me breakfast in bed and drove my mom to
+                the airport and gave me their first born child.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="controls">
+          <div id="quote-1" class="quote-control selected"></div>
+          <div id="quote-2" class="quote-control"></div>
+          <div id="quote-3" class="quote-control"></div>
+          <div id="quote-4" class="quote-control"></div>
+        </div>
+      </div>
+    </section>
+    <section class="logos">
+      <ul class="clientLogos">
+        <li><img width="150" height="150" src="photos/building.png" /></li>
+        <li><img width="150" height="150" src="photos/building.png" /></li>
+        <li><img width="150" height="150" src="photos/building.png" /></li>
+        <li><img width="150" height="150" src="photos/building.png" /></li>
+        <li><img width="150" height="150" src="photos/building.png" /></li>
+        <li><img width="150" height="150" src="photos/building.png" /></li>
+      </ul>
     </section>
     <section class="contact" id="coffee">
       <h2 class="contactMe">Contact</h2>
@@ -174,5 +240,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="quotes.js"></script>
   </body>
 </html>
