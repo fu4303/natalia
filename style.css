@@ -193,12 +193,16 @@ h2 {
 }
 
 .serviceListTitle {
+  padding-top: 3%;
+  padding-bottom: 1%;
   font-size: 3.5em;
   color: #826363;
   text-align: right;
 }
 
 .tellingListTitle {
+  padding-top: 3%;
+  padding-bottom: 1%;
   font-size: 3.5em;
   color: #fbf6f2;
   text-align: left;
@@ -239,8 +243,21 @@ h2 {
   color: #fbf6f2;
 }
 
+.logos {
+  height: 25vh;
+  background-color: #fbf6f2;
+  color: black;
+}
+
+.clientLogos {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .clients {
-  height: 70vh;
+  height: 50vh;
   background-color: #fbf6f2;
   color: #636b45;
 }
