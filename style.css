@@ -60,7 +60,7 @@ h2 {
 
 .typewriter {
   padding-top: 20%;
-  padding-left: 18%;
+  /* padding-left: 18%; */
 }
 
 .typewriter h2 {
@@ -112,7 +112,7 @@ h2 {
   display: inline;
   font-family: 'Lucky';
   font-size: 3em;
-  margin: -0.8% 0 0 8%;
+  margin: 0;
   padding: 0;
 }
 
@@ -243,16 +243,20 @@ h2 {
 }
 
 .serviceListTitle {
+  letter-spacing: 1.5em;
   padding-top: 3%;
   padding-bottom: 1%;
+  margin-right: -4%;
   font-size: 3.5em;
   color: #826363;
   text-align: right;
 }
 
 .tellingListTitle {
+  letter-spacing: 1.5em;
   padding-top: 3%;
   padding-bottom: 1%;
+  margin-left: 4%;
   font-size: 3.5em;
   color: #fbf6f2;
   text-align: left;
@@ -281,12 +285,6 @@ h2 {
   color: black;
 }
 
-.projects {
-  height: 100vh;
-  background-color: #fbf6f2;
-  color: #636b45;
-}
-
 .about {
   height: 50vh;
   background-color: #636b45;
@@ -312,8 +310,26 @@ h2 {
   color: #636b45;
 }
 
-.contact {
+.about {
   height: 50vh;
-  background-color: #826363;
+  background-color: #cda34f;
   color: #fbf6f2;
+}
+
+.contactMe {
+  font-family: 'Lucky';
+  font-size: 3em;
+  padding-bottom: 1%;
+  text-align: left;
+  margin: 12% 0 0 8%;
+  line-height: 2em;
+}
+
+.natalia {
+  height: 70%;
+  width: auto;
+}
+
+.contact {
+  height: 40vh;
 }
