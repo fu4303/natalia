@@ -1,15 +1,28 @@
 .projects {
-  height: 170vh;
+  height: 180vh;
   color: black;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1 1 1 1 1;
+  grid-template-rows: 1.2fr 1fr 1fr 1fr 1.2fr;
 }
 
 .project1 {
-  background-color: gray;
+  background-image: url('photos/marketing.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
   grid-row: 1;
   grid-column: 1 / span 4;
+  position: relative;
+}
+
+.project1 h2 {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(69, 68, 68, 0.8);
+  width: 100%;
+  padding: 1% 0;
+  color: #fbf6f2;
+  letter-spacing: 0.3em;
 }
 
 .project2 {
@@ -27,7 +40,9 @@
 .project4 {
   grid-column: 3 / span 4;
   grid-row: 2 / span 2;
-  background-color: #828b60;
+  background-image: url('photos/digital.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   display: grid;
 }
 
@@ -41,28 +56,27 @@
 }
 
 .projectTitle4 h2 {
-  margin-top: 15%;
+  margin-top: 16%;
 }
 
 .project5 {
+  font-size: 1.8em;
+  color: #828b60;
+  letter-spacing: 0.1em;
   grid-column: 1 / span 2;
   grid-row: 3 / span 2;
   background-color: gainsboro;
   display: grid;
+  background-image: url('photos/digital.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.projectTitle5 {
-  width: 40%;
-  height: 40%;
-  background-color: rgb(233, 195, 119, 0.7);
-  outline: 2px solid #e9c377;
-  outline-offset: 5px;
-  transform: rotate(45deg);
+.project5 h2 {
+  background-color: rgb(220, 220, 220, 0.7);
+  width: 100%;
+  padding: 7% 0;
   margin: auto;
-}
-
-.projectTitle5 h2 {
-  margin-top: 15%;
 }
 
 .project6 {
