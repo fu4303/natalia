@@ -63,12 +63,14 @@ h2 {
   /* padding-left: 18%; */
 }
 
-.typewriter h2 {
+.mainText {
+  margin: 0 auto;
+
   text-align: left;
   color: black;
   overflow: hidden;
   border-right-color: #636b45;
-  border-right: 0.15em solid;
+  /* border-right: 0.15em solid; */
   white-space: nowrap;
   letter-spacing: 0.15em;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
@@ -98,7 +100,7 @@ h2 {
 }
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
@@ -106,13 +108,16 @@ h2 {
   50% {
     border-color: #636b45;
   }
-}
+  100% {
+    border-color: transparent;
+  }
+} */
 
 .tagline {
   display: inline;
   font-family: 'Lucky';
   font-size: 3em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
