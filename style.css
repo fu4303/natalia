@@ -20,7 +20,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'DM Serif Display', serif;
   font-size: 2.5em;
   padding: 2% 0;
   margin: 0;
@@ -208,20 +207,21 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   height: 80%;
+  padding: 0;
 }
 
 .serviceItem,
 .tellingServiceItem {
   list-style: none;
-  width: 75%;
-  height: 100px;
+  width: 100%;
+  height: 120px;
   padding: 35px 25px;
   position: relative;
   overflow: hidden;
   opacity: 1;
   background-color: #826363;
   color: black;
-  transition: all ease-in-out 0.3s;
+  /* transition: all ease-in-out 0.3s; */
 }
 
 .tellingServiceItem {
@@ -229,12 +229,12 @@ h2 {
   position: relative;
 }
 
-.serviceBlurb,
+/* .serviceBlurb,
 .tellingServiceBlurb {
   color: #826363;
   font-size: 0px;
   transition: all ease-in-out 0.6s;
-}
+} */
 
 .tellingServiceBlurb {
   color: #826363;
@@ -244,13 +244,12 @@ h2 {
   font-size: 2em;
   margin-top: auto;
   margin-bottom: auto;
-  transition: all ease-in-out 0.5s;
+  /* transition: all ease-in-out 0.5s; */
 }
 
 .serviceListTitle {
   letter-spacing: 1.5em;
-  padding-top: 3%;
-  padding-bottom: 1%;
+  padding: 3% 0 1%;
   margin-right: -4%;
   font-size: 3.5em;
   color: #826363;
@@ -267,7 +266,7 @@ h2 {
   text-align: left;
 }
 
-.serviceItem:hover,
+/* .serviceItem:hover,
 .tellingServiceItem:hover {
   height: 42%;
   transition: all ease-in-out 0.3s;
@@ -288,7 +287,7 @@ h2 {
 
 .serviceItem:hover .tellingServiceBlurb {
   color: black;
-}
+} */
 
 .about {
   height: 50vh;
@@ -338,8 +337,26 @@ h2 {
   margin: auto 20% auto 0;
 }
 
+.location {
+  height: 75vh;
+  background-image: url('photos/pdxluxmap.png');
+  background-size: cover;
+  font-family: 'Lucky';
+  font-size: 1.5em;
+}
+
+.portland {
+  margin-right: 29vw;
+  padding-top: 20vh;
+}
+
+.luxembourg {
+  margin-left: 25vw;
+  margin-top: 10vh;
+}
+
 .contact {
-  height: 40vh;
+  height: 50vh;
 }
 
 .contactMe {
@@ -347,6 +364,6 @@ h2 {
   font-size: 3em;
   padding-bottom: 1%;
   text-align: left;
-  margin: 12% 0 0 8%;
+  margin: 0 0 0 8%;
   line-height: 2em;
 }
