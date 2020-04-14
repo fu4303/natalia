@@ -264,6 +264,12 @@ h2 {
   text-align: left;
 }
 
+.serviceBlurb,
+.tellingServiceBlurb {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1em;
+}
+
 .serviceItem:hover {
   background-color: rgb(130, 99, 99, 0.5);
   transition: all ease-in-out 0.3s;
