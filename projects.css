@@ -128,7 +128,7 @@
 }
 
 .wrap {
-  background-color: rgb(251, 246, 242, 0.9);
+  background-color: rgb(251, 246, 242);
   height: 90%;
   width: 90%;
   margin: 2.5% auto;
@@ -141,6 +141,7 @@
   text-align: left;
 }
 
+/* first style option */
 .projectDetailsTitle {
   grid-column: 1 / span 5;
   grid-row: 1;
@@ -200,4 +201,88 @@
   grid-row: 2;
   grid-column: 3;
   margin: 3% 5% 8%;
+}
+
+/* second style option */
+
+.wrap2 {
+  background-color: rgb(251, 246, 242);
+  height: 90%;
+  width: 90%;
+  margin: 2.5% auto;
+  padding: 2% 5%;
+  display: grid;
+  grid-template-rows: 1fr 2fr 5fr;
+  font-family: 'DM Serif Display', serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: left;
+  grid-template-rows: 1fr 7fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.projectDetailsBlurbs2 {
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projectDetailsClient2 {
+  margin: 5% 5% 5% 10%;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.8em;
+  grid-row: 1;
+}
+
+.projectDetailsSection2 {
+  margin: 20px 0;
+}
+
+.projectDetailsBlurb3 {
+  margin: 5% 15%;
+  grid-row: 2;
+}
+
+.projectDetailsPhotos2 {
+  grid-row: 2;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 0 3%;
+}
+
+.projectDetailsMainPhoto2 {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  background-image: url('photos/digital.jpeg');
+  background-size: cover;
+  margin: 3% 0;
+}
+
+.projectDetailsSecondPhoto2 {
+  background-image: url('photos/marketing.jpeg');
+  background-size: cover;
+  grid-row: 2;
+  grid-column: 1;
+  margin: 3% 5% 3% 0;
+}
+
+.projectDetailsThirdPhoto2 {
+  background-image: url('photos/type.jpg');
+  background-size: cover;
+  grid-row: 2;
+  grid-column: 2;
+  margin: 3% 0 3% 5%;
+}
+
+.clientTitle {
+  display: block;
+  content: '';
+  width: 80%;
+  height: 1px;
+  background: gray;
+  margin-left: 10%;
 }
