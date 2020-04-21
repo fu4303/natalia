@@ -57,29 +57,28 @@ h2 {
   height: 75vh;
 }
 
-.typewriter {
+/* .typewriter {
   padding-top: 20%;
-  /* padding-left: 18%; */
+  /* padding-left: 18%;
 }
 
 .mainText {
-  margin: 0 auto;
-
-  text-align: left;
+  /* margin: 0 auto; */
+/* text-align: left;
   color: black;
-  overflow: hidden;
+  /* overflow: auto;
   border-right-color: #636b45;
-  /* border-right: 0.15em solid; */
+  /* border-right: 0.15em solid;
   white-space: nowrap;
   letter-spacing: 0.15em;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
+} */
 
-.textRotate {
+/* .textRotate {
   font-size: 3em;
   color: #636b45;
   display: inline;
-}
+} */
 
 .title {
   color: #636b45;
@@ -89,14 +88,13 @@ h2 {
 }
 
 /* The typing effect */
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 100%;
-  }
-}
+  } */
 
 /* The typewriter cursor effect */
 /* @keyframes blink-caret {
@@ -112,13 +110,13 @@ h2 {
   }
 } */
 
-.tagline {
-  display: inline;
+/* .tagline {
   font-family: 'Lucky';
   font-size: 3em;
   margin: 0 auto;
+  overflow: auto;
   padding: 0;
-}
+} */
 
 .flo-li {
   height: 150px;

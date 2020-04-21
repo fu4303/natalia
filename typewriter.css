@@ -1,0 +1,185 @@
+/* .mainText {
+  animation: mainText;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  /* position: relative;
+  animation-duration: 5s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: 1;
+}
+
+.typewriter {
+  padding-top: 20%;
+}
+
+.app {
+  animation: text;
+  width: 0%;
+}
+
+.campaign {
+  animation: text;
+  animation-delay: 4s;
+}
+
+.video {
+  animation: text;
+  animation-delay: 8s;
+}
+
+.movement {
+  animation: text;
+  animation-delay: 12s;
+}
+
+.site {
+  animation: text;
+  animation-delay: 16s;
+}
+
+.app,
+.campaign,
+.video,
+.movement,
+.site,
+.brand {
+  width: 0%;
+  text-align: left;
+  margin-left: 0;
+  letter-spacing: 0.15em;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 5s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: 1;
+}
+
+.brand {
+  animation: brandText;
+  animation-delay: 20s;
+} */
+
+/* .app::after,
+.campaign::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+} */
+
+/* @keyframes mainText {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 14em;
+  }
+}
+
+@keyframes text1 {
+  0%,
+  38%,
+  100% {
+    width: 0;
+  }
+  10%,
+  50% {
+    width: 2em;
+  }
+}
+
+@keyframes text {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  60%,
+  90% {
+    width: 7em;
+  }
+}
+
+@keyframes brandText {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 5em;
+  }
+} */
+
+/* @keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+} */
+
+.banner {
+  display: block;
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+  font-family: 'Lucky';
+}
+
+.typed_wrap {
+  font-size: 2em;
+  display: block;
+  width: 900px;
+  height: auto;
+  padding: 30px;
+
+  /*centers it in the .banner*/
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.typed_wrap h1 {
+  font-family: 'Lucky';
+  display: inline;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+  content: '|';
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+/* .typed-cursor {
+  opacity: 0;
+  display: none;
+} */
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

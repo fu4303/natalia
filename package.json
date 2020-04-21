@@ -1,0 +1,24 @@
+{
+  "name": "Natalia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quotes.js",
+  "dependencies": {
+    "typed.js": "^2.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greffly/NataliaCorinne.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greffly/NataliaCorinne/issues"
+  },
+  "homepage": "https://github.com/greffly/NataliaCorinne#readme"
+}

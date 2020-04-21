@@ -23,11 +23,18 @@
     <link href="quotes.css" rel="stylesheet" type="text/css" />
     <link href="projects.css" rel="stylesheet" type="text/css" />
     <link href="typewriter.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="typed.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css?family=DM+Serif+Display"
       rel="stylesheet"
     />
+    <script>
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 30,
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -56,17 +63,16 @@
       </nav>
     </header>
     <section class="landingPage">
-      <div class="typewriter">
-        <h2 class="tagline">
-          <span class="mainText">The story makes the</span>
-          <span class="app">app.</span>
-          <span class="campaign">campaign.</span>
-          <span class="video">video.</span>
-          <span class="movement">movement.</span>
-          <span class="site">site.</span>
-          <span class="brand">brand.</span>
-        </h2>
+      <div class="banner">
+        <div class="typed_wrap">
+          <h1>The story makes the <span class="typed"></span></h1>
+        </div>
       </div>
+      <div id="typed-strings">
+        <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+        <p>It <em>types</em> out sentences.</p>
+      </div>
+      <span id="typed"></span>
       <div class="flo-li">
         <div class="flower"></div>
       </div>
@@ -615,6 +621,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="quotes.js"></script>
   </body>
 </html>
