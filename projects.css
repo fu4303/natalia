@@ -11,10 +11,10 @@
   bottom: 0;
   background-color: rgb(69, 68, 68, 0.8);
   width: 100%;
-  height: 80px;
+  height: 90px;
   color: #fbf6f2;
   letter-spacing: 0.2em;
-  padding: 18px 0;
+  padding: 18px 10px;
 }
 
 .projectTitle a {
@@ -96,15 +96,16 @@
 .activeOverlay:hover .projectTitle {
   height: 100%;
   cursor: pointer;
-  padding: 120px 0;
-  font-size: 3.5em;
+  padding: 120px 10px;
+  /* font-size: 3.5em; */
   transition: all 0.5s ease-in-out;
 }
 
 /* lightbox */
 .lightbox {
   /** Default lightbox to hidden */
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 
   /** Position and style */
   text-decoration: none;
@@ -117,6 +118,7 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-out;
 }
 
 .lightbox:target {
@@ -124,9 +126,20 @@
   outline: none;
 
   /** Unhide lightbox **/
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease-in;
 }
 
+.projectDetailsTitle {
+  grid-column: 1 / span 5;
+  grid-row: 1;
+  text-align: center;
+  font-family: 'Lucky';
+  color: #826363;
+  letter-spacing: 0.2em;
+}
+/*
 .wrap {
   background-color: rgb(251, 246, 242);
   height: 90%;
@@ -141,15 +154,7 @@
   text-align: left;
 }
 
-/* first style option */
-.projectDetailsTitle {
-  grid-column: 1 / span 5;
-  grid-row: 1;
-  text-align: center;
-  font-family: 'Lucky';
-  color: #826363;
-  letter-spacing: 0.2em;
-}
+/* first style option
 
 .projectDetailsClient {
   margin: 9% 5% 5% 10%;
@@ -201,11 +206,11 @@
   grid-row: 2;
   grid-column: 3;
   margin: 3% 5% 8%;
-}
+} */
 
 /* second style option */
 
-.wrap2 {
+.wrap {
   background-color: rgb(251, 246, 242);
   height: 90%;
   width: 90%;
@@ -219,33 +224,35 @@
   text-align: left;
   grid-template-rows: 1fr 7fr;
   grid-template-columns: 2fr 1fr;
+  overflow: hidden;
 }
 
-.projectDetailsBlurbs2 {
+.projectDetailsBlurbs {
   grid-row: 2;
   grid-column: 2;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
-.projectDetailsClient2 {
-  margin: 5% 5% 5% 10%;
+.projectDetailsClient {
+  margin: 3% 5% 5% 10%;
   font-size: 1.2em;
   text-align: center;
   line-height: 1.8em;
   grid-row: 1;
 }
 
-.projectDetailsSection2 {
+.projectDetailsSection {
+  text-align: left;
   margin: 20px 0;
 }
 
-.projectDetailsBlurb3 {
-  margin: 5% 15%;
+.projectDetailsBlurb {
+  margin: 1% 10%;
   grid-row: 2;
 }
 
-.projectDetailsPhotos2 {
+.projectDetailsPhotos {
   grid-row: 2;
   grid-column: 1;
   display: grid;
@@ -254,7 +261,7 @@
   margin: 0 0 3%;
 }
 
-.projectDetailsMainPhoto2 {
+.projectDetailsMainPhoto {
   grid-row: 1;
   grid-column: 1 / span 2;
   background-image: url('photos/digital.jpeg');
@@ -262,7 +269,7 @@
   margin: 3% 0;
 }
 
-.projectDetailsSecondPhoto2 {
+.projectDetailsSecondPhoto {
   background-image: url('photos/marketing.jpeg');
   background-size: cover;
   grid-row: 2;
@@ -270,7 +277,7 @@
   margin: 3% 5% 3% 0;
 }
 
-.projectDetailsThirdPhoto2 {
+.projectDetailsThirdPhoto {
   background-image: url('photos/type.jpg');
   background-size: cover;
   grid-row: 2;
@@ -281,8 +288,8 @@
 .clientTitle {
   display: block;
   content: '';
-  width: 80%;
+  width: 100%;
   height: 1px;
   background: gray;
-  margin-left: 10%;
+  margin-left: 0;
 }

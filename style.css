@@ -347,9 +347,9 @@ h2 {
 
 .location {
   height: 75vh;
+  font-family: 'Lucky';
   background-image: url('photos/pdxluxmap.png');
   background-size: cover;
-  font-family: 'Lucky';
   font-size: 1.5em;
 }
 
