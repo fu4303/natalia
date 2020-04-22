@@ -15,9 +15,9 @@
 .typed_wrap {
   font-size: 2em;
   display: block;
-  width: 800px;
+  width: 100%;
   height: auto;
-  padding: 30px;
+  padding: 30px 0 30px 31%;
   text-align: left;
 
   /*centers it in the .banner*/
@@ -69,7 +69,7 @@
   width: 100%;
   position: relative;
   animation: titleAnimation 1s ease-in;
-  animation-delay: 13s;
+  animation-delay: 13.5s;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -78,7 +78,16 @@
   margin: 0 auto;
   position: absolute;
   bottom: 0;
-  left: 36%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.burst {
+  height: 70px;
+  position: absolute;
+  right: 36%;
+  bottom: 70px;
 }
 
 @keyframes titleAnimation {
