@@ -1,4 +1,4 @@
-import Typed from 'typed.js';
+//import { Typed } from 'typed.js';
 
 const navItems = document.querySelectorAll('.navItem');
 const typed = document.querySelectorAll('.typed');
@@ -18,7 +18,7 @@ $('nav')
   });
 
 // typewriter effect
-$(function () {
+$(document).on('ready', function () {
   $('.typed').typed({
     strings: ['app.', 'campaign.', 'video.', 'movement.', 'site.', 'brand.'],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
