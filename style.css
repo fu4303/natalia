@@ -57,66 +57,12 @@ h2 {
   height: 75vh;
 }
 
-/* .typewriter {
-  padding-top: 20%;
-  /* padding-left: 18%;
-}
-
-.mainText {
-  /* margin: 0 auto; */
-/* text-align: left;
-  color: black;
-  /* overflow: auto;
-  border-right-color: #636b45;
-  /* border-right: 0.15em solid;
-  white-space: nowrap;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-} */
-
-/* .textRotate {
-  font-size: 3em;
-  color: #636b45;
-  display: inline;
-} */
-
 .title {
   color: #636b45;
   grid-column: 1;
   text-align: left;
   align-self: center;
 }
-
-/* The typing effect */
-/* @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  } */
-
-/* The typewriter cursor effect */
-/* @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #636b45;
-  }
-  100% {
-    border-color: transparent;
-  }
-} */
-
-/* .tagline {
-  font-family: 'Lucky';
-  font-size: 3em;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0;
-} */
 
 .flo-li {
   height: 150px;

@@ -23,7 +23,7 @@
     <link href="quotes.css" rel="stylesheet" type="text/css" />
     <link href="projects.css" rel="stylesheet" type="text/css" />
     <link href="typewriter.css" rel="stylesheet" type="text/css" />
-    <!-- <script src="typed.js"></script> -->
+    <script src="typed.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css?family=DM+Serif+Display"
@@ -31,6 +31,7 @@
     />
   </head>
   <body>
+    <script src="./typed.js"></script>
     <header>
       <div class="navBarMobile">
         <div class="menuButton">
@@ -59,13 +60,16 @@
     <section class="landingPage">
       <div class="banner">
         <div class="typed_wrap">
-          <h1>The story makes the <span class="typed"></span></h1>
+          <h1>
+            <span class="typed1"></span>
+            <span class="typed"></span>
+          </h1>
         </div>
       </div>
       <span id="typed"></span>
-      <div class="flo-li">
+      <!-- <div class="flo-li">
         <div class="flower"></div>
-      </div>
+      </div> -->
     </section>
     <section class="introBlurb">
       <h3>
@@ -610,9 +614,32 @@
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="typed.min.js"></script>
-    <script src="typed.js"></script>
+    <script>
+      var options1 = {
+        strings: ['The story makes the'],
+        typeSpeed: 80,
+        showCursor: false,
+      };
+      var typed1 = new Typed('.typed1', options1);
+    </script>
+    <script>
+      var options = {
+        strings: [
+          'app.',
+          'campaign.',
+          'video.',
+          'movement.',
+          'site.',
+          'brand.',
+        ],
+        typeSpeed: 80,
+        startDelay: 2350,
+        backSpeed: 40,
+        backDelay: 800,
+        showCursor: false,
+      };
+      var typed = new Typed('.typed', options);
+    </script>
     <script src="script.js"></script>
     <script src="quotes.js"></script>
   </body>
