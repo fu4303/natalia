@@ -53,10 +53,6 @@ h2 {
   color: black;
 }
 
-.landingPage {
-  height: 75vh;
-}
-
 .title {
   color: #636b45;
   grid-column: 1;

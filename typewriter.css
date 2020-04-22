@@ -1,6 +1,12 @@
+.landingPage {
+  height: 75vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+}
+
 .banner {
+  grid-row: 3;
   display: block;
-  min-height: 70%;
   width: 100%;
   position: relative;
   font-family: 'Lucky';
@@ -16,7 +22,7 @@
 
   /*centers it in the .banner*/
   position: absolute;
-  top: 80%;
+  top: 10%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -49,6 +55,34 @@
     opacity: 1;
   }
   50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.brandName {
+  opacity: 0;
+  color: black;
+  grid-row: 2;
+  width: 100%;
+  position: relative;
+  animation: titleAnimation 1s ease-in;
+  animation-delay: 13s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.brandName h1 {
+  font-size: 5.5em;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 36%;
+}
+
+@keyframes titleAnimation {
+  0% {
     opacity: 0;
   }
   100% {
