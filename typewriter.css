@@ -75,12 +75,14 @@
 
 .brandName h1 {
   font-size: 5.5em;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   position: absolute;
   bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .burst {
