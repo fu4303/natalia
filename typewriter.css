@@ -1,7 +1,7 @@
 .landingPage {
   height: 75vh;
-  display: grid;
-  grid-template-rows: 1fr 2fr 2fr;
+  /* display: grid; */
+  /* grid-template-rows: 1fr 5fr; */
 }
 
 .banner {
@@ -13,6 +13,7 @@
 }
 
 .typed_wrap {
+  margin-top: 8%;
   font-size: 2em;
   display: block;
   width: 100%;
@@ -63,24 +64,18 @@
 }
 
 .brandName {
-  opacity: 0;
   color: black;
-  grid-row: 2;
   width: 100%;
-  position: relative;
-  animation: titleAnimation 1s ease-in;
-  animation-delay: 13.5s;
-  -webkit-animation-fill-mode: forwards;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 16% auto 0;
 }
 
 .brandName h1 {
   font-size: 5.5em;
+  margin: 0;
   /* margin: 0 auto; */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
   /* -webkit-transform: translateX(-50%);
   transform: translateX(-50%); */
 }
@@ -89,7 +84,13 @@
   height: 70px;
   position: absolute;
   right: 36%;
-  bottom: 70px;
+  bottom: 100px;
+}
+
+.tagline {
+  font-size: 2em;
+  transform: rotate(-5deg);
+  margin: 10px 0 0 130px;
 }
 
 @keyframes titleAnimation {
