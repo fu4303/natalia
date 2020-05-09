@@ -112,6 +112,7 @@ h2 {
   background-color: #cda34f;
   color: #fbf6f2;
   font-family: 'DM Serif Display', serif;
+  z-index: -1;
 }
 
 .introBlurb h3 {
@@ -126,11 +127,17 @@ h2 {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 5% 0;
+  background-image: url('photos/purpleball.png');
+  background-repeat: no-repeat;
+  background-position-x: 125%;
+  background-position-y: 60%;
+  background-size: 60%;
+  z-index: 10;
+  /* height: 100%; */
 }
 
 .storyServices {
   grid-column: 1;
-  background-color: #fbf6f2;
   color: #826363;
   text-align: left;
   margin-left: 5%;
@@ -138,7 +145,7 @@ h2 {
 
 .tellingServices {
   grid-column: 2;
-  color: #826363;
+  color: #fbf6f2;
   text-align: right;
   margin-right: 5%;
 }
@@ -152,15 +159,16 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   height: 80%;
-  padding: 0 20% 0 0;
+  padding: 0 25% 0 0;
 }
 
 .tellingList {
-  padding: 0 0 0 20%;
+  padding: 0 0 0 25%;
 }
 
 .serviceItem,
 .tellingServiceItem {
+  font-family: 'Lucky';
   list-style: none;
   width: 100%;
   height: 100px;
@@ -192,18 +200,71 @@ h2 {
 
 .tellingListTitle {
   text-align: right;
+  color: #fbf6f2;
 }
 
 .serviceBlurb,
 .tellingServiceBlurb {
-  font-family: 'DM Serif Display', serif;
   font-size: 1.3em;
 }
 
 .about {
-  height: 50vh;
-  background-color: #636b45;
-  color: #fbf6f2;
+  height: 120vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.process {
+  grid-row: 1;
+}
+
+.processTitle {
+  margin-left: 10%;
+  padding: 5% 0 0;
+  text-align: left;
+}
+
+.processPhoto {
+  width: 75%;
+}
+
+.company {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.companyLogo {
+  grid-column: 2;
+  height: 300px;
+}
+
+.companyWrap {
+  grid-column: 1;
+  padding: 5% 20%;
+}
+
+.companyBlurb,
+.nataliaBlurb {
+  font-size: 1.5em;
+}
+
+.natalia {
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.nataliaPhoto {
+  grid-column: 1;
+  grid-row: 1;
+  height: 300px;
+  margin-left: 40%;
+}
+
+.nataliaWrap {
+  grid-column: 2;
+  padding: 5% 20%;
 }
 
 .logos {
@@ -223,29 +284,6 @@ h2 {
   height: 50vh;
   background-color: #fbf6f2;
   color: #636b45;
-}
-
-.about {
-  height: 50vh;
-  background-color: #cda34f;
-  color: #fbf6f2;
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
-
-.aboutBlurb {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  grid-column: 1;
-  padding: 5%;
-  margin: auto;
-}
-
-.natalia {
-  grid-column: 2;
-  height: 80%;
-  width: auto;
-  margin: auto 20% auto 0;
 }
 
 .location {
@@ -344,6 +382,7 @@ h2 {
 }
 
 .contact {
+  background-color: #cda34f;
   height: 40vh;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
