@@ -209,7 +209,7 @@ h2 {
 }
 
 .about {
-  height: 120vh;
+  height: 130vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -241,7 +241,7 @@ h2 {
 
 .companyWrap {
   grid-column: 1;
-  padding: 5% 20%;
+  padding: 4% 20%;
 }
 
 .companyBlurb,
@@ -264,7 +264,7 @@ h2 {
 
 .nataliaWrap {
   grid-column: 2;
-  padding: 5% 20%;
+  padding: 3% 12%;
 }
 
 .logos {
@@ -287,7 +287,7 @@ h2 {
 }
 
 .location {
-  height: 75vh;
+  height: 65vh;
   font-family: 'Lucky';
   background-image: url('photos/pdxluxmap.png');
   background-size: cover;
