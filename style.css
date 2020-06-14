@@ -3,8 +3,8 @@
 }
 
 @font-face {
-  font-family: 'Lucky';
-  src: url('lucky.ttf');
+  font-family: 'ProximaNova';
+  src: url('ProximaNova.otf');
 }
 
 /* html {
@@ -18,7 +18,7 @@ body {
   min-width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Lucky';
+  font-family: 'ProximaNova';
   font-size: 14px;
   background-color: #fbf6f2;
   text-align: center;
@@ -77,55 +77,25 @@ h2 {
     color: #cda34f;
   }
 
-  .flower {
-    position: relative;
-    color: #cda34f;
-    border-top: calc(0.5 * 2vw) solid transparent;
-    border-left: calc(0.5 * 2vw) solid #cda34f;
-    border-right: calc(0.5 * 2vw) solid #cda34f;
-    height: calc(1.25 * 2vw);
-    width: 0;
-    border-radius: 50% / 50% 50% 50% 50%;
-    box-shadow: 0 calc(-0.5 * 2vw) 0 calc(-0.35 * 2vw) #cda34f;
-    filter: drop-shadow(calc(2 * 2vw) 0 0 #cda34f);
+  .landingBlurb {
+    height: 25vh;
+    background-color: #a2b4a6;
   }
 
-  .flower:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    width: 2px;
-    height: calc(4.5 * 2vw);
-    background: #cda34f;
-    top: calc(-0.5 * 2vw);
-    left: -1px;
-    z-index: -10;
-  }
-  .flower:after {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    border-top: 2vw solid transparent;
-    border-left: calc(0.8 * 2vw) solid #cda34f;
-    border-right: calc(0.8 * 2vw) solid #cda34f;
-    height: calc(1.2 * 2vw);
-    width: 0;
-    left: 50%;
-    margin: auto 0 0 calc(-0.8 * 2vw);
-    top: calc(0.8 * 2vw);
-    border-radius: 0 0 calc(0.125 * 2vw) calc(0.125 * 2vw);
-    filter: drop-shadow(0 calc(1.4 * 2vw) 0 #cda34f);
+  .landingBlurb h2 {
+    line-height: 25vh;
+    padding: 0;
   }
 
-  .introBlurb {
+  .typedBlurb {
     height: 30vh;
-    background-color: #cda34f;
+    background-color: #37423b;
     color: #fbf6f2;
     font-family: 'DM Serif Display', serif;
     z-index: -1;
   }
 
-  .introBlurb h3 {
+  .typedBlurb h3 {
     font-size: 2.2em;
     padding: 10vh 7%;
     line-height: 1.5em;
@@ -148,7 +118,7 @@ h2 {
 
   .storyServices {
     grid-column: 1;
-    color: #826363;
+    color: black;
     text-align: left;
     margin-left: 5%;
   }
@@ -178,7 +148,7 @@ h2 {
 
   .serviceItem,
   .tellingServiceItem {
-    font-family: 'Lucky';
+    font-family: 'ProximaNova';
     list-style: none;
     width: 100%;
     height: 100px;
@@ -204,7 +174,7 @@ h2 {
   .tellingListTitle {
     letter-spacing: 0.1em;
     font-size: 3.5em;
-    color: #826363;
+    color: black;
     text-align: left;
   }
 
@@ -221,11 +191,19 @@ h2 {
   .about {
     height: 130vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 1fr 1fr;
+  }
+
+  .processBlurb {
+    grid-row: 1;
+    background-color: #37423b;
+    color: #fbf6f2;
+    font-size: 1.5em;
   }
 
   .process {
-    grid-row: 1;
+    grid-row: 2;
+    background-color: #37423b;
   }
 
   .processTitle {
@@ -239,7 +217,7 @@ h2 {
   }
 
   .company {
-    grid-row: 2;
+    grid-row: 3;
     display: grid;
     grid-template-columns: 60% 40%;
   }
@@ -260,7 +238,7 @@ h2 {
   }
 
   .natalia {
-    grid-row: 3;
+    grid-row: 4;
     display: grid;
     grid-template-columns: 40% 60%;
   }
@@ -288,6 +266,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 0;
   }
 
   .clients {
@@ -298,7 +277,7 @@ h2 {
 
   .location {
     height: 65vh;
-    font-family: 'Lucky';
+    font-family: 'ProximaNova';
     background-image: url('photos/pdxluxmap.png');
     background-size: cover;
     font-size: 2em;
@@ -392,7 +371,7 @@ h2 {
   }
 
   .contact {
-    background-color: #cda34f;
+    background-color: #a2b4a6;
     height: 40vh;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
@@ -402,7 +381,7 @@ h2 {
   .contactMe {
     grid-row: 1;
     grid-column: 1;
-    font-family: 'Lucky';
+    font-family: 'ProximaNova';
     color: black;
     font-size: 3em;
     padding: 12% 0 0 5%;

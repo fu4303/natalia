@@ -9,7 +9,7 @@
   display: block;
   width: 100%;
   position: relative;
-  font-family: 'Lucky';
+  font-family: 'ProximaNova';
 }
 
 .typewriter {
@@ -25,6 +25,7 @@
 }
 
 .typed_wrap {
+  overflow: hidden;
   padding: 7% 0 0 2%;
 
   font-size: 1.5em;
@@ -35,7 +36,7 @@
 }
 
 .typed_wrap h1 {
-  font-family: 'Lucky';
+  font-family: 'ProximaNova';
   display: inline;
 }
 

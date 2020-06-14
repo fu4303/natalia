@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Lucky';
-  src: url('lucky.ttf');
+  font-family: 'ProximaNova';
+  src: url('ProximaNova.otf');
 }
 
 .wrapper {
@@ -24,7 +24,7 @@
 }
 
 .quote {
-  font-family: 'Lucky';
+  font-family: 'ProximaNova';
   transition: 1.5s;
   color: black;
   position: absolute;
